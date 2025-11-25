@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     // and more...
   },
   auth: {
-    origin: process.env.ORIGIN || `http://localhost:3000`,
+    originEnvKey: process.env.ORIGIN,
+    baseURL: process.env.AUTH_ORIGIN,
   },
 });
